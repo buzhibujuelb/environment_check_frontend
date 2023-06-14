@@ -3,8 +3,9 @@ import { toggleDark } from "~/composables";
 </script>
 
 <template>
+    <!--
   <el-menu class="el-menu-demo" mode="horizontal">
-    <el-menu-item index="1">Element Plus</el-menu-item>
+    <el-menu-item index="1">Mainpage</el-menu-item>
     <el-sub-menu index="2">
       <template #title>Workspace</template>
       <el-menu-item index="2-1">item one</el-menu-item>
@@ -28,4 +29,5 @@ import { toggleDark } from "~/composables";
       </button>
     </el-menu-item>
   </el-menu>
+    -->
 </template>
