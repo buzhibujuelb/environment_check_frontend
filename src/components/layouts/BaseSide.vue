@@ -36,10 +36,11 @@
       <template #title>仪表盘</template>
     </el-menu-item></router-link>
 
-    <el-menu-item index="3" disabled>
+    <router-link to="/detect">
+    <el-menu-item index="3" >
 <el-icon><Aim /></el-icon>
       <template #title>火焰检测</template>
-    </el-menu-item>
+    </el-menu-item></router-link>
 
   <router-link to="/Operation">
     <el-menu-item index="4" >
@@ -76,7 +77,7 @@ import {
   Operation
 } from "@element-plus/icons-vue";
 
-import { toggleDark } from "~/composables";
+import { toggleDark } from "../../composables";
 const isCollapse = ref(true);
 const handleOpen = (key: string, keyPath: string[]) => {
   console.log(key, keyPath);

@@ -1,11 +1,10 @@
 <script setup lang="ts">
-import { provide, onMounted, ref } from "vue";
+import { provide, onMounted, ref , onBeforeUnmount} from "vue";
 
 import { useDark } from "@vueuse/core";
 
 import VChart, { THEME_KEY } from "vue-echarts";
 
-defineProps<{ msg: string }>();
 import { ElMessage } from "element-plus";
 /*
    const count = ref(0);
@@ -30,6 +29,7 @@ import {
   DatasetComponent, 
 } from "echarts/components";
 
+defineProps<{ msg: string }>();
 use([
   TitleComponent,
   TooltipComponent,
@@ -61,6 +61,12 @@ onMounted(() => {
   getsensor(data_sensor1, "sensor1");
   getsensor(data_sensor2, "sensor2");
 });
+
+onBeforeUnmount(()=>{
+  clearInterval(timer);
+
+});
+
 
 var theme = ref("light");
 provide(THEME_KEY, theme);
@@ -107,7 +113,7 @@ const change = () => {
 };
 */
 
-setInterval(function () {
+const timer=setInterval(function () {
   getsensor(data_sensor1, "sensor1");
   getsensor(data_sensor2, "sensor2");
 }, 1000);

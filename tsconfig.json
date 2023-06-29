@@ -22,5 +22,5 @@
   "vueCompilerOptions": {
     "target": 3,
   },
-  "include": ["**/*.js","**/*.ts", "**/*.d.ts", "**/*.tsx", "**/*.vue"]
+  "include": ["**/*"]
 }

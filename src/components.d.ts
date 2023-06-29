@@ -11,7 +11,6 @@ declare module '@vue/runtime-core' {
   export interface GlobalComponents {
     BaseHeader: typeof import('./components/layouts/BaseHeader.vue')['default']
     BaseSide: typeof import('./components/layouts/BaseSide.vue')['default']
-    copy: typeof import('./components/dashboard copy.vue')['default']
     Dashboard: typeof import('./components/dashboard.vue')['default']
     Detect: typeof import('./components/detect.vue')['default']
     ElCol: typeof import('element-plus/es')['ElCol']
@@ -24,7 +23,6 @@ declare module '@vue/runtime-core' {
     ElRadioGroup: typeof import('element-plus/es')['ElRadioGroup']
     ElRow: typeof import('element-plus/es')['ElRow']
     ElSpace: typeof import('element-plus/es')['ElSpace']
-    Logos: typeof import('./components/Logos.vue')['default']
     Operation: typeof import('./components/Operation.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']

@@ -2,6 +2,7 @@ import { createRouter, createWebHashHistory, RouteRecordRaw } from 'vue-router';
 import { createWebHistory} from 'vue-router';
 import dashboard from '../components/dashboard.vue';
 import Operation from '../components/Operation.vue';
+import detect    from '../components/detect.vue';
 
 export const constantRoutes: RouteRecordRaw[] = [
   {
@@ -16,6 +17,11 @@ export const constantRoutes: RouteRecordRaw[] = [
     path: '/Operation',
     component: Operation,
     name: 'Operation',
+  },
+  {
+    path: '/detect',
+    component: detect,
+    name: 'detect',
   }
 ];
 
