@@ -41,7 +41,7 @@ use([
 ]);
 
 
-const URL = process.env.NODE_ENV === 'development'? "pi.20021123.xyz":location.hostname;
+const URL =( process.env.NODE_ENV === 'development'|| location.hostname==="envchk.20021123.xyz")? "pi.20021123.xyz":location.hostname;
 
 const WS_URL =  (location.protocol==='https:'?"wss://":"ws://") + URL;
 const WS_PORT = location.protocol === 'https:'? 9000: 8084;

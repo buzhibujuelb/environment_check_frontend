@@ -28,7 +28,7 @@ use([
 ]);
 
 
-const URL = process.env.NODE_ENV === 'development'? "pi.20021123.xyz":location.hostname;
+const URL =( process.env.NODE_ENV === 'development'|| location.hostname==="envchk.20021123.xyz")? "pi.20021123.xyz":location.hostname;
 
 const DB_URL = URL;
 const DB_PORT = location.protocol === 'https:'? 5002: 5001;
