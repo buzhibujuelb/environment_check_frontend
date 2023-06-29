@@ -7,7 +7,7 @@ import { start } from "repl";
 import { isEmpty, isNull, isUndefined } from "lodash";
 
 
-const UURL = location.hostname;
+const UURL = process.env.NODE_ENV === 'development'? "pi.20021123.xyz":location.hostname;
 const MURL = UURL;//"localhost:5173"
 var animateid;
 const WS_URL = (location.protocol === 'https:' ? "wss://" : "ws://") + UURL;
